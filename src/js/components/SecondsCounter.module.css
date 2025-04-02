@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContaienr {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+p {
+  margin: 0;
+}
+
+span {
+  font-size: 200px;
+  color: white;
+  margin: 0px 5px;
+}
+
+.reflection {
+  transform: rotatex(180deg) translatey(145px);
+}
+.reflection > span {
+  filter: blur(9px) brightness(1);
+}
+
+.controls {
+  bottom: 10px;
+  left: 50;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  /* From https://css.glass */
+  background: rgba(239, 239, 239, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(239, 239, 239, 0.3);
+
+  position: absolute;
+
+  width: 500px;
+  height: 50px;
+
+  border-radius: 10px;
+}
